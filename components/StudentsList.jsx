@@ -56,7 +56,7 @@ const AddStudentForm = ({ onAddStudent }) => {
             type={field === 'dob' ? 'date' : 'text'}
             value={formData[field]}
             onChange={handleChange}
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400 text-black"
             />
             {errors[field] && <p className="text-red-500 text-sm mt-1">{errors[field]}</p>}
         </div>
