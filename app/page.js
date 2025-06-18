@@ -4,7 +4,7 @@ import { useState } from 'react';
 import Navbar from '../components/Navbar';
 import AddStudentForm from '../components/StudentsList';
 import initialStudents from '../data/students';
-
+import Footer from '@/components/Footer';
 export default function Home() {
   const [students, setStudents] = useState(initialStudents);
 
@@ -32,6 +32,7 @@ export default function Home() {
           ))}
         </ul>
       </section>
+      <Footer />
     </main>
   );
 }
